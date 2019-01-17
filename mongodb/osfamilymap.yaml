@@ -5,7 +5,7 @@
 Debian:
   server:
     #deb unofficial packages conflict with MongoDB offical supported packages, so ..
-    use_repo: true
+    # use_repo: true
 
 RedHat:
   system:
