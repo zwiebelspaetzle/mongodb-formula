@@ -32,8 +32,9 @@ mongodb server package repo:
 mongodb server package installed:
   pkg.installed:
     - refresh: True
-    - name: {{ mongodb.server.package }}
+    # - name: {{ mongodb.server.package }}
+    - name: mongodb-org
         {%- if mongodb.server.use_repo %}
-    - fromrepo: {{ mongodb.server.repo.name|replace('RELEASE', mongodb.server.version) or None }}
+    # - fromrepo: {{ mongodb.server.repo.name|replace('RELEASE', mongodb.server.version) or None }}
         {%- endif %}
 
